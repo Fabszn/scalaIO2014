@@ -3,10 +3,15 @@
     est écrit en Java et on sait que lorsque l'ID n'existe pas alors la fonction renvoie une référence NULL
 
      -- Commenter le code :
-        pattern if null qui permet d'éviter les nullepointers exception
-        problème : la manipulation de référence null dans le code ce n'est pas très propre
-                   et cela introduit de la complexité avec les structures if
+        pattern if null qui permet d'éviter les nullePointerExceptions
+        problème : la manipulation de référence null dans le code n'est pas très propre
+                   et cela introduit de la complexité avec la structure conditionnelle IF
 
-2 Pour améliorer la situation, on va introduire le type Option (encaspulation du retour de l'appel de la fonction
-    du repository dans une Option
-    Donc ce n'est plus un contact que notre service renvoie, mais une Option de Contact. 
+
+
+2 Pour améliorer ce code, on va introduire le type Option (encapsulation du retour de l'appel de la fonction
+    du repository dans un type Option)
+    Donc ce n'est plus un contact que notre service renvoie, mais une Option[Contact].
+
+
+3 On peut adresser notre problème en ayant recours à une monade..
