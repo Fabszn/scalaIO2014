@@ -8,16 +8,15 @@ object ContactService extends App {
     ContactRepository.getContactById(id);
   }
 
-  // ids : 2, 3
-
 
   val c = findContact(2)
 
-  if (c != null) {
-    println(c.age)
-  } else {
-    println("Contact not found")
+  println {
+    if (c != null) {
+      c.age
+    } else {
+      "Contact not found"
+    }
   }
-
 
 }
