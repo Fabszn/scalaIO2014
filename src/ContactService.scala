@@ -5,7 +5,7 @@ import repository.ContactRepository
 object ContactService extends App {
 
   def findContact(id: Long): Contact = {
-    ContactRepository.getContactById(id);
+    ContactRepository.getContactById(id)
   }
 
 
